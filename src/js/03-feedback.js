@@ -1,5 +1,5 @@
 import throttle from "lodash.throttle";
-// 03-feedback.js
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".feedback-form");
     const emailInput = form.querySelector("input[name='email']");
