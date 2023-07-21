@@ -23,14 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
     const clearFormData = () => {
       localStorage.removeItem("feedback-form-state");
-      emailInput.value = "";
-      messageInput.value = "";
+    
       console.log("Form submitted with data:", {
         email: emailInput.value,
         message: messageInput.value,
       });
     };
-  
     emailInput.addEventListener("input", saveFormData);
     messageInput.addEventListener("input", saveFormData);
     form.addEventListener("submit", function (event) {
