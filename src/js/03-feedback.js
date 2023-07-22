@@ -12,7 +12,7 @@ import throttle from "lodash.throttle";
         email: emailInput.value,
         message: messageInput.value,
       };
-      localStorage.setItem("storageKey", JSON.stringify(formData));
+      localStorage.setItem(storageKey, JSON.stringify(formData));
     }, 500);
   form.addEventListener('input', savedFormData)
     
@@ -26,7 +26,7 @@ import throttle from "lodash.throttle";
   form.addEventListener('submit', event =>{
     event.preventDefault();
     console.log({
-    email: messageInput.value,
+    email: emailInput.value,
     message : messageInput.value,
     })
    localStorage.removeItem(storageKey);
