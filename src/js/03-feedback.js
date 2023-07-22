@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         email: emailInput.value,
         message: messageInput.value,
       };
-      localStorage.setItem("feedback-form-state", JSON.stringify(formData));
+      localStorage.setItem("storageKey", JSON.stringify(formData));
     }, 500);
   
     const loadFormData = () => {
